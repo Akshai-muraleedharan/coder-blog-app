@@ -10,9 +10,13 @@ const app = express();
 
 dotenv.config();
 
+
+mongoose.connect(process.env.MOGODB_URL)
+.then(()=> {
+    console.log('DB connected successfully')
+})
+
 const port =process.env.PORT || 4000;
-
-
 
 app.get('/',postrouter)
 
