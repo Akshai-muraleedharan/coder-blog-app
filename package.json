@@ -2,6 +2,7 @@
   "name": "coder-blog-app-new",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "dev":"nodemon api/server.js"
   },
